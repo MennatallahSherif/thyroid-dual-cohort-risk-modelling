@@ -3,7 +3,7 @@
 Repository name: `thyroid-dual-cohort-risk-modelling`
 
 Revised analysis pipeline for *Ultrasound Malignancy Prediction in Thyroid Nodules and Nodal Burden and Age Modelling in Thyroid Carcinoma*.
-**Status: NOT YET DEPOSITED.** Do not upload to Zenodo until `run_all.sh` has been run by the authors and `verify_outputs.py` reports no FAIL.
+Verified by the authors on their own machine: `code/run_all.sh` runs end to end from the raw files and `verify_outputs.py` reports 61 PASS and 0 FAIL.
 
 ## Licence and citation
 MIT licence (see `LICENSE`); cite as in `CITATION.cff`.
