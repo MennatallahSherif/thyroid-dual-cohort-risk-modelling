@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Reproducibility code for: Ultrasound Malignancy Prediction in Thyroid Nodules and Nodal Burden and Age Modelling in Thyroid Carcinoma"
+type: software
+version: "1.0.0"
+license: MIT
+authors:
+  - family-names: Sherif
+    given-names: Mennatallah
+    affiliation: "Misr University for Science and Technology (MUST), Giza, Egypt"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # add if available
+  - family-names: Elsayed
+    given-names: Eman K.
+    affiliation: "Misr University for Science and Technology (MUST), Giza, Egypt"
+  - family-names: Deif
+    given-names: Mohanad A.
+    affiliation: "Misr University for Science and Technology (MUST), Giza, Egypt"
+repository-code: "https://github.com/MennatallahSherif/thyroid-dual-cohort-risk-modelling"
+# doi: "10.5281/zenodo.XXXXXXX"                                 # fill in after Zenodo assigns the DOI
