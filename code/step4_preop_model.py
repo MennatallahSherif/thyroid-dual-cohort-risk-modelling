@@ -606,18 +606,21 @@ for t_val in tirads_vals:
     spec = tn / (tn + fp) if (tn + fp) > 0 else 0
     fpr_point = 1 - spec
 
+    if t_val < 3:      # TIRADS >= 1 and >= 2 classify (almost) every nodule as positive and coincide with the corner (1, 1); not drawn
+        continue
     ax.scatter(fpr_point, sens, s=80, zorder=5, color=COLORS['red'], marker='D')
-    ax.annotate(f'T>={t_val}\n(Sens={sens:.2f},\nSpec={spec:.2f})',
+    dx, dy = {3: (-0.24, -0.16), 4: (0.06, -0.09), 5: (0.06, -0.05)}.get(int(t_val), (0.05, -0.05))
+    ax.annotate(f'T>={int(t_val)}\n(Sens={sens:.2f},\nSpec={spec:.2f})',
                 xy=(fpr_point, sens),
-                xytext=(fpr_point + 0.05, sens - 0.05),
-                fontsize=7, color=COLORS['red'],
+                xytext=(fpr_point + dx, sens + dy),
+                fontsize=8, color=COLORS['red'],
                 arrowprops=dict(arrowstyle='->', color=COLORS['red'], lw=0.8))
 
 ax.plot([0, 1], [0, 1], 'k:', lw=1, alpha=0.5)
 ax.set_xlabel('1 - Specificity')
 ax.set_ylabel('Sensitivity')
 ax.set_title('TIRADS Score ROC with Clinical Cutpoint Analysis\n'
-             '(diamonds = TIRADS >= threshold operating points)')
+             '(diamonds = operating points at TIRADS >= 3, >= 4, >= 5)')
 ax.legend(loc='lower right')
 ax.set_xlim(0, 1)
 ax.set_ylim(0, 1.02)
