@@ -65,7 +65,7 @@ Step 6 `main` takes about 45 minutes and `sens` about 35 minutes on a laptop; `m
 
 ## Citation
 
-Please cite the article (details to be added) and this release (Zenodo DOI to be added on release).
+Please cite the article (details to be added) and this release (Zenodo DOI: 10.5281/zenodo.23622490).
 
 ## Licence
 
