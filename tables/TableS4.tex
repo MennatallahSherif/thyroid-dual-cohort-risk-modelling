@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\caption{Exploratory discrimination within Bethesda III (n = 39)}\label{tab:s4_bethesda_iii}
+\scriptsize
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lccc@{}}
+\toprule
+Model & n & Malignant & AUC \\
+\midrule
+ACR TI-RADS & 39 & 27 & 0.9 \\
+Logistic regression & 39 & 27 & 0.895 \\
+Random forest & 39 & 27 & 0.889 \\
+XGBoost & 39 & 27 & 0.858 \\
+\bottomrule
+\end{tabular*}
+\smallskip\noindent{\footnotesize Out-of-fold predictions of the primary models evaluated in the subgroup; no between-model inference.}
+\end{table}

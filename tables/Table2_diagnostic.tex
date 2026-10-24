@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\caption{Diagnostic discrimination, calibration and operating-point specificity}\label{tab:diagnostic}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lccccccc@{}}
+\toprule
+Model & AUC & $\Delta$AUC & Holm & Calibration & Calibration & Brier & Specificity* \\
+ & (95\% CI) & (95\% CI) & p & intercept & slope & score & (95\% CI) \\
+\midrule
+ACR TI-RADS & 0.910 (0.900--0.919) & Reference & --- & 0.00 & 0.99 & 0.092 & 0.576 (0.558--0.594) \\
+Logistic regression & 0.932 (0.924--0.940) & 0.023 (0.017--0.028) & $<$0.001 & 0.00 & 1.00 & 0.089 & 0.574 (0.556--0.592) \\
+Random forest & 0.932 (0.924--0.939) & 0.022 (0.016--0.028) & $<$0.001 & $-$0.71 & 1.25 & 0.098 & 0.554 (0.536--0.572) \\
+XGBoost & 0.935 (0.927--0.942) & 0.025 (0.020--0.031) & $<$0.001 & 0.00 & 0.96 & 0.089 & 0.571 (0.553--0.589) \\
+\bottomrule
+\end{tabular*}
+\smallskip\noindent{\footnotesize n = 4,088; malignant 1,231. Stratified 5-fold cross-validation (out-of-fold predictions); AUC CIs and paired $\Delta$AUC CIs from 2,000 patient-level bootstrap resamples; Holm-adjusted paired DeLong tests across the three co-primary comparisons; $\Delta$AUC versus ACR TI-RADS. Intercept and slope: calibration intercept and slope. *Specificity at the sensitivity of ACR TI-RADS $\geq$4 (98.5\%); model thresholds chosen on the same out-of-fold predictions; Wilson 95\% CIs.}
+\end{table}

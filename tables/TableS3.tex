@@ -1,0 +1,48 @@
+\begin{table}[htbp]
+\caption{Diagnostic sensitivity, supportive and supplementary analyses}\label{tab:s3_diagnostic_sensitivity}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+Age reference & Analysis & Model & n & Malignant & AUC (95\% CI) & $\Delta$AUC vs ACR TI-RADS (95\% CI) \\
+\midrule
+2024 & P: Set A, hierarchy outcome & ACR TI-RADS & 4,088 & 1,231 & 0.910 (0.900--0.919) & --- \\
+2024 & P: Set A, hierarchy outcome & Logistic regression & 4,088 & 1,231 & 0.932 (0.924--0.940) & +0.023 (+0.017 to +0.028) \\
+2024 & P: Set A, hierarchy outcome & Random forest & 4,088 & 1,231 & 0.932 (0.924--0.939) & +0.022 (+0.016 to +0.028) \\
+2024 & P: Set A, hierarchy outcome & XGBoost & 4,088 & 1,231 & 0.935 (0.927--0.942) & +0.025 (+0.020 to +0.031) \\
+2024 & S1: Set A, released labels & ACR TI-RADS & 4,088 & 1,229 & 0.910 (0.900--0.919) & --- \\
+2024 & S1: Set A, released labels & Logistic regression & 4,088 & 1,229 & 0.932 (0.924--0.940) & +0.022 (+0.017 to +0.028) \\
+2024 & S1: Set A, released labels & Random forest & 4,088 & 1,229 & 0.931 (0.924--0.939) & +0.022 (+0.016 to +0.028) \\
+2024 & S1: Set A, released labels & XGBoost & 4,088 & 1,229 & 0.934 (0.926--0.941) & +0.024 (+0.018 to +0.030) \\
+2024 & S2: Set A, v1.0.1 features (+age\_55\_plus) & ACR TI-RADS & 4,088 & 1,231 & 0.910 (0.900--0.919) & --- \\
+2024 & S2: Set A, v1.0.1 features (+age\_55\_plus) & Logistic regression & 4,088 & 1,231 & 0.932 (0.924--0.940) & +0.022 (+0.017 to +0.028) \\
+2024 & S2: Set A, v1.0.1 features (+age\_55\_plus) & Random forest & 4,088 & 1,231 & 0.931 (0.923--0.939) & +0.022 (+0.016 to +0.027) \\
+2024 & S2: Set A, v1.0.1 features (+age\_55\_plus) & XGBoost & 4,088 & 1,231 & 0.935 (0.927--0.942) & +0.025 (+0.020 to +0.031) \\
+2024 & SD1: histopathology-confirmed, Set A & ACR TI-RADS & 796 & 704 & 0.865 (0.809--0.912) & --- \\
+2024 & SD1: histopathology-confirmed, Set A & Logistic regression & 796 & 704 & 0.913 (0.864--0.952) & +0.048 (+0.019 to +0.078) \\
+2024 & SD1: histopathology-confirmed, Set A & Random forest & 796 & 704 & 0.918 (0.881--0.950) & +0.054 (+0.020 to +0.086) \\
+2024 & SD1: histopathology-confirmed, Set A & XGBoost & 796 & 704 & 0.916 (0.877--0.950) & +0.052 (+0.018 to +0.088) \\
+2024 & Set B: full cohort (upper bound, incorporation bias) & ACR TI-RADS & 3,942 & 1,089 & 0.906 (0.896--0.916) & --- \\
+2024 & Set B: full cohort (upper bound, incorporation bias) & Logistic regression & 3,942 & 1,089 & 0.997 (0.995--0.999) & +0.091 (+0.082 to +0.101) \\
+2024 & Set B: full cohort (upper bound, incorporation bias) & Random forest & 3,942 & 1,089 & 0.997 (0.995--0.999) & +0.092 (+0.082 to +0.101) \\
+2024 & Set B: full cohort (upper bound, incorporation bias) & XGBoost & 3,942 & 1,089 & 0.996 (0.993--0.999) & +0.090 (+0.080 to +0.100) \\
+2024 & Set B within S-D1 (descriptive only) & ACR TI-RADS & 654 & 566 & 0.866 & --- \\
+2024 & Set B within S-D1 (descriptive only) & Logistic regression & 654 & 566 & 0.990 & --- \\
+2024 & Set B within S-D1 (descriptive only) & Random forest & 654 & 566 & 0.988 & --- \\
+2024 & Set B within S-D1 (descriptive only) & XGBoost & 654 & 566 & 0.980 & --- \\
+2023 & P: Set A, hierarchy outcome & ACR TI-RADS & 4,088 & 1,231 & 0.910 (0.900--0.919) & --- \\
+2023 & P: Set A, hierarchy outcome & Logistic regression & 4,088 & 1,231 & 0.932 (0.924--0.940) & +0.023 (+0.017 to +0.028) \\
+2023 & P: Set A, hierarchy outcome & Random forest & 4,088 & 1,231 & 0.932 (0.924--0.939) & +0.022 (+0.016 to +0.028) \\
+2023 & P: Set A, hierarchy outcome & XGBoost & 4,088 & 1,231 & 0.935 (0.927--0.942) & +0.025 (+0.020 to +0.031) \\
+2025 & P: Set A, hierarchy outcome & ACR TI-RADS & 4,088 & 1,231 & 0.910 (0.900--0.919) & --- \\
+2025 & P: Set A, hierarchy outcome & Logistic regression & 4,088 & 1,231 & 0.932 (0.924--0.940) & +0.023 (+0.017 to +0.028) \\
+2025 & P: Set A, hierarchy outcome & Random forest & 4,088 & 1,231 & 0.932 (0.924--0.940) & +0.022 (+0.017 to +0.028) \\
+2025 & P: Set A, hierarchy outcome & XGBoost & 4,088 & 1,231 & 0.935 (0.928--0.943) & +0.025 (+0.020 to +0.031) \\
+birth-year ages excluded & P: Set A, hierarchy outcome & ACR TI-RADS & 4,054 & 1,225 & 0.909 (0.899--0.918) & --- \\
+birth-year ages excluded & P: Set A, hierarchy outcome & Logistic regression & 4,054 & 1,225 & 0.932 (0.923--0.939) & +0.023 (+0.018 to +0.028) \\
+birth-year ages excluded & P: Set A, hierarchy outcome & Random forest & 4,054 & 1,225 & 0.932 (0.924--0.939) & +0.023 (+0.018 to +0.029) \\
+birth-year ages excluded & P: Set A, hierarchy outcome & XGBoost & 4,054 & 1,225 & 0.936 (0.928--0.943) & +0.027 (+0.022 to +0.032) \\
+\bottomrule
+\end{tabular}}
+\smallskip\noindent{\footnotesize Set B (FNAC as predictor) is subject to incorporation bias; within S-D1 it is descriptive only (88 benign). Primary age reference year 2024.}
+\end{table}
