@@ -1,0 +1,43 @@
+\begin{table}[htbp]
+\caption{Prespecified prognostic sensitivity analyses: model performance (apparent)}\label{tab:s10_prognostic_sensitivity_models}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lcccccccc@{}}
+\toprule
+Analysis & Model & n & CSS deaths & $\lambda$ & Uno's C 24 m & tdAUC 24 m & Calibration slope & O:E \\
+\midrule
+S-COD-A: unknown COD counted as CSS & M0 core & 30672 & 266 & 0.0 & 0.888 & 0.892 & 0.97 & 1.02 \\
+S-COD-A: unknown COD counted as CSS & M1 core + N & 30672 & 266 & 0.0 & 0.896 & 0.898 & 0.97 & 1.03 \\
+S-COD-A: unknown COD counted as CSS & M2 core + LNR & 30672 & 266 & 0.0 & 0.887 & 0.891 & 0.97 & 1.02 \\
+S-COD-A: unknown COD counted as CSS & M3 core + LODDS & 30672 & 266 & 0.0 & 0.886 & 0.89 & 0.97 & 1.02 \\
+S-COD-B: unknown COD censored at death & M0 core & 30672 & 243 & 0.0 & 0.911 & 0.914 & 0.97 & 1.02 \\
+S-COD-B: unknown COD censored at death & M1 core + N & 30672 & 243 & 0.0 & 0.92 & 0.922 & 0.97 & 1.03 \\
+S-COD-B: unknown COD censored at death & M2 core + LNR & 30672 & 243 & 0.0 & 0.911 & 0.914 & 0.97 & 1.03 \\
+S-COD-B: unknown COD censored at death & M3 core + LODDS & 30672 & 243 & 0.0 & 0.909 & 0.912 & 0.97 & 1.02 \\
+S-EX90: examined = 90 excluded & M0 core & 30397 & 238 & 0.0 & 0.916 & 0.919 & 0.97 & 1.03 \\
+S-EX90: examined = 90 excluded & M1 core + N & 30397 & 238 & 0.0 & 0.924 & 0.926 & 0.97 & 1.03 \\
+S-EX90: examined = 90 excluded & M2 core + LNR & 30397 & 238 & 0.0 & 0.916 & 0.919 & 0.97 & 1.03 \\
+S-EX90: examined = 90 excluded & M3 core + LODDS & 30397 & 238 & 0.0 & 0.915 & 0.918 & 0.97 & 1.03 \\
+S-TREAT: + surgery type + RAI & M0 core & 30649 & 243 & 0.0 & 0.918 & 0.921 & 0.98 & 1.01 \\
+S-TREAT: + surgery type + RAI & M1 core + N & 30649 & 243 & 0.0 & 0.93 & 0.933 & 0.99 & 1.02 \\
+S-TREAT: + surgery type + RAI & M2 core + LNR & 30649 & 243 & 0.0 & 0.919 & 0.923 & 0.98 & 1.01 \\
+S-TREAT: + surgery type + RAI & M3 core + LODDS & 30649 & 243 & 0.0 & 0.916 & 0.92 & 0.98 & 1.01 \\
+S-RCS: age as RCS (3 knots) & M0 core & 30649 & 243 & 0.0 & 0.911 & 0.914 & 0.97 & 1.02 \\
+S-RCS: age as RCS (3 knots) & M1 core + N & 30649 & 243 & 0.0 & 0.919 & 0.921 & 0.97 & 1.03 \\
+S-RCS: age as RCS (3 knots) & M2 core + LNR & 30649 & 243 & 0.0 & 0.91 & 0.913 & 0.97 & 1.02 \\
+S-RCS: age as RCS (3 knots) & M3 core + LODDS & 30649 & 243 & 0.0 & 0.909 & 0.912 & 0.97 & 1.02 \\
+S-D5: nodes examined $>$= 5 & M0 core & 13764 & 177 & 0.0 & 0.895 & 0.898 & 0.96 & 1.01 \\
+S-D5: nodes examined $>$= 5 & M1 core + N & 13764 & 177 & 0.0 & 0.898 & 0.901 & 0.96 & 1.02 \\
+S-D5: nodes examined $>$= 5 & M2 core + LNR & 13764 & 177 & 0.0 & 0.895 & 0.898 & 0.96 & 1.01 \\
+S-D5: nodes examined $>$= 5 & M3 core + LODDS & 13764 & 177 & 0.0 & 0.894 & 0.897 & 0.96 & 1.01 \\
+S-ALLHIST: all histologies (reference) & M0 core & 31741 & 401 & 0.0 & 0.942 & 0.944 & 1.0 & 1.06 \\
+S-ALLHIST: all histologies (reference) & M1 core + N & 31741 & 401 & 0.0 & 0.947 & 0.949 & 1.0 & 1.07 \\
+S-ALLHIST: all histologies (reference) & M2 core + LNR & 31741 & 401 & 0.0 & 0.941 & 0.944 & 1.0 & 1.06 \\
+S-ALLHIST: all histologies (reference) & M3 core + LODDS & 31741 & 401 & 0.0 & 0.94 & 0.943 & 1.0 & 1.06 \\
+S-RIDGE: ridge, lambda by 5-fold CV & M0 core & 30649 & 243 & 0.01 & 0.911 & 0.914 & 0.98 & 1.02 \\
+S-RIDGE: ridge, lambda by 5-fold CV & M1 core + N & 30649 & 243 & 0.0 & 0.92 & 0.922 & 0.97 & 1.03 \\
+S-RIDGE: ridge, lambda by 5-fold CV & M2 core + LNR & 30649 & 243 & 0.01 & 0.911 & 0.914 & 0.98 & 1.03 \\
+S-RIDGE: ridge, lambda by 5-fold CV & M3 core + LODDS & 30649 & 243 & 0.01 & 0.909 & 0.912 & 0.98 & 1.02 \\
+\bottomrule
+\end{tabular}}
+\end{table}

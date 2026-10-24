@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\caption{Prognostic discrimination and 24-month calibration}\label{tab:prognostic}
+\footnotesize
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lccccccc@{}}
+\toprule
+Model & Uno's C & Uno's C & Harrell's C & tdAUC 12 m & tdAUC 24 m & Calibration & O:E \\
+ & apparent & corrected & corrected & corrected & corrected & slope & 24 m \\
+\midrule
+M0 core & 0.911 & 0.909 & 0.915 & 0.916 & 0.912 & 0.96 & 1.02 \\
+M1 core + N category & 0.920 & 0.918 & 0.922 & 0.922 & 0.920 & 0.96 & 1.03 \\
+M2 core + LNR & 0.911 & 0.909 & 0.915 & 0.916 & 0.912 & 0.96 & 1.03 \\
+M3 core + LODDS & 0.909 & 0.907 & 0.913 & 0.914 & 0.910 & 0.96 & 1.03 \\
+\bottomrule
+\end{tabular*}
+\smallskip\noindent{\footnotesize n = 30,649; 243 CSS deaths. Unpenalised Cox models; core = age, sex, histology, T and M category. Corrected values are optimism-corrected (Harrell bootstrap, 500 resamples, full refit); Uno's C truncated at $\tau$ = 24 months; tdAUC, time-dependent AUC; calibration slope optimism-corrected; O:E, observed (Kaplan--Meier) to expected 24-month risk, apparent.}
+\end{table}

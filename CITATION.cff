@@ -1,8 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite it as below."
-title: "Reproducibility code for: Ultrasound Malignancy Prediction in Thyroid Nodules and Nodal Burden and Age Modelling in Thyroid Carcinoma"
+title: "Two-Stage Risk Stratification in Thyroid Carcinoma Using Ultrasound and Nodal Metrics — analysis code
+"
 type: software
-version: "1.0.0"
+version: "1.1.0"
 license: MIT
 authors:
   - family-names: Sherif

@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\caption{Operating-point performance (primary diagnostic cohort)}\label{tab:s5_operating_points}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lcccccccc@{}}
+\toprule
+Rule & TP & FP & TN & FN & Sensitivity & Specificity & PPV & NPV \\
+\midrule
+TIRADS $>$= 4 & 1213 & 1210 & 1647 & 18 & 0.985 (0.977--0.991) & 0.576 (0.558--0.594) & 0.501 (0.481--0.521) & 0.989 (0.983--0.993) \\
+Logistic Regression $>$= 0.0373 (sensitivity-matched) & 1213 & 1217 & 1640 & 18 & 0.985 (0.977--0.991) & 0.574 (0.556--0.592) & 0.499 (0.479--0.519) & 0.989 (0.983--0.993) \\
+Random Forest $>$= 0.1639 (sensitivity-matched) & 1213 & 1274 & 1583 & 18 & 0.985 (0.977--0.991) & 0.554 (0.536--0.572) & 0.488 (0.468--0.507) & 0.989 (0.982--0.993) \\
+XGBoost $>$= 0.0393 (sensitivity-matched) & 1213 & 1226 & 1631 & 18 & 0.985 (0.977--0.991) & 0.571 (0.553--0.589) & 0.497 (0.478--0.517) & 0.989 (0.983--0.993) \\
+\bottomrule
+\end{tabular}}
+\smallskip\noindent{\footnotesize Wilson 95\% CIs.}
+\end{table}

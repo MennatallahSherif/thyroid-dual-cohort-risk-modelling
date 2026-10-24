@@ -1,9 +1,4 @@
-# Never commit patient-level or registry data, or derived files that contain it
-data/raw/
-data/processed/
-*.csv.gz
-# Regenerated outputs and logs
-outputs/
-logs/
+data/
+results/
 __pycache__/
 *.pyc
